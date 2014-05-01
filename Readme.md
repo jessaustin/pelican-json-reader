@@ -21,7 +21,7 @@ The following JSON data:
 ]
 ```
 
-would produce this html output (somewhat edited for clarity):
+would produce this html output with the "simple" theme (somewhat edited for clarity):
 
 ```html
 <!DOCTYPE html>
