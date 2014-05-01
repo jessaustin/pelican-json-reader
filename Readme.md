@@ -15,12 +15,33 @@ The following JSON data:
 
 ```json
 [ { "title": "Basic Example"
-  , "template": "base"
+  , "template": "page"
   }
 , "This is some content."
 ]
 ```
 
-would produce this html output:
+would produce this html output (somewhat edited for clarity):
 
-
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Basic Example</title>
+</head>
+<body id="index" class="home">
+    <header id="banner" class="body">
+        <h1><a href="../">Top</a></h1>
+        <nav><ul>
+            <li class="active"><a href="../pages/basic-example.html">Basic Example</a></li>
+        </ul></nav>
+    </header><!-- /#banner -->
+    <section id="content" class="body">
+        <h1 class="entry-title">Basic Example</h1>
+        
+        This is some content.
+    </section>
+</body>
+</html>
+```
